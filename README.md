@@ -66,4 +66,4 @@ the stop words are removed. It is then vectorized and term frequency is calculat
 ## Loading
 The transformed data can be written using the DataStreamWriter API into many build in [output sinks](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-sinks).
 For debugging purposes, the console output sink can be used to display the transformed dataframe.
-For the purpose of this project, the data is being written into a Databricks [Delta Lake](https://docs.databricks.com/delta/delta-streaming.html) storage layer.
+For the purpose of this project, the data is being written into a Databricks [Delta Lake](https://docs.databricks.com/delta/delta-streaming.html) storage layer.<br> The data can further be analyzed or visualized using tools like Tableau or PowerBI to gather insights.
