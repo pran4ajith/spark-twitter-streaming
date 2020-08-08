@@ -64,6 +64,6 @@ The data is initially tokenized and filtered of urls and punctuations using regu
 the stop words are removed. It is then vectorized and term frequency is calculated with the help of CountVectorizer. The next step is to calculate the Inverse Document Frequency. <br/>The TF-IDF product is then passed on to a classifier, Logistic Regression in this case, to make predictions. This particular implementation had an accuracy of 0.8323919410115472, as calculated by a binary classification evaluator. <br/>The pipeline as well as trained model is saved for our use with the streaming data.
 
 ## Loading
-The transformed data can be written using the DataStreamWriter API into many build in [output sinks](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-sinks).
+The transformed data can be written using the DataStreamWriter API into many built in [output sinks](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-sinks).
 For debugging purposes, the console output sink can be used to display the transformed dataframe.
 For the purpose of this project, the data is being written into a Databricks [Delta Lake](https://docs.databricks.com/delta/delta-streaming.html) storage layer.<br> The data can further be analyzed or visualized using tools like Tableau or PowerBI to gather insights.
